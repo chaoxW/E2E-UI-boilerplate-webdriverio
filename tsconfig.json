@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "noImplicitAny": true,
+        "strict": true,
+        "noEmit": true,
+        "removeComments": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "pretty": true,
+        "allowSyntheticDefaultImports": true,
+        "resolveJsonModule": true,
+        "types": ["node", "chai", "webdriverio/async", "@wdio/types", "@wdio/cucumber-framework"],
+        "baseUrl": ".",
+        "paths": {
+            "@base/*": ["src/support/pages/@base/*"],
+            "pages/*": ["src/support/pages/*"]
+        }
+    },
+    "include": ["./src/**/*.ts"],
+    "compileOnSave": false,
+    "typeAcquisition": {
+        "enable": false
+    }
+}
